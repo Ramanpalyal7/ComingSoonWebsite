@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/ComingSoonProject/images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 1% 8%;
+}
+
+.container .logo {
+  width: 120px;
+  margin: 4px 12px;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 7em;
+}
+.content p {
+  color: #fff;
+  margin-top: 1em;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 4em;
+  font-weight: 600;
+  margin-top: 12px 0;
+}
+
+.content h1 span {
+  color: #ff6000;
+}
+
+.content button {
+  color: #fff;
+  padding: 12px 25px;
+  box-shadow: floralwhite;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.triangle {
+  height: 18px;
+  margin-left: 4px;
+  /* border: 2px solid red; */
+}
+/* ----------------------------Animation ---------of---------Rocket */
+.rocket {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  animation: rocket linear 6s infinite;
+  width: 16em;
+}
+
+@keyframes rocket {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-230%);
+  }
+}
+.launch-date {
+  display: flex;
+  /* border: 2px solid  #fff; */
+  color: #fff;
+
+  margin-top: -4em;
+  margin-bottom: 2em;
+}
+
+.launch-date div {
+  flex-basis: 100px;
+}
+.launch-date p {
+  font-size: 4em;
+}
